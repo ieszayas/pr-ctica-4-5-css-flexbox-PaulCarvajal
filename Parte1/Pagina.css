@@ -1,0 +1,13 @@
+ 
+
+header .cabecera{
+    height: 20px;
+    width: 100%;
+    background-color: #004D98;
+    
+}
+
+nav{
+    align-items: flex-start; visibility: hidden;
+    background-color: #A50044;
+}
