@@ -2,25 +2,25 @@
      font-family: Verdana, Geneva, Tahoma, sans-serif;
      background-color: #f4f4f4;
      padding: 10px;
-
-     height: 100%;
-     
+     height: 100vh;
  }
 
  .container {
-    min-height: 100%;
+    height: 85vh;
      display: flex;
+     justify-content: space-between;
      flex-wrap: wrap;
      gap: 10px;
+     
  }
 
  header, footer {
-     background: #A50044;
+     background: #e4e8a0;
      padding: 20px;
      text-align: left;
      flex: 1 100%;
-
-     color: whitesmoke;
+    
+     color: black;
  }
 
  nav {
@@ -28,23 +28,34 @@
      padding: 20px;
      color: whitesmoke;
      flex: 1;
+     order: 2;
+ }
+
+ .nav2{
+    background: #004D98;
+     padding: 20px;
+     flex: 1;
+     order: 4;
  }
 
  article {
-     background: #e4e8a0;
-     padding: 20px;
-     flex: 2;
- }
-
- aside {
-     background:#004D98;
+     background: #A50044;
      padding: 20px;
      color: whitesmoke;
      flex: 1;
+     order: 1;
+ }
+
+ aside {
+     background:#A50044;
+     padding: 20px;
+     color: whitesmoke;
+     flex: 1;
+     order: 3;
  }
 
  @media (max-width: 640px) {
-     .container {
+     .mainContent {
          flex-direction: column;
      }
 
