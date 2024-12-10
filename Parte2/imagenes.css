@@ -1,0 +1,60 @@
+html, body{
+    height: 100vh;
+}
+
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    height: 85vh;
+    margin: 0 auto;
+}
+
+div {
+    flex: 1  calc(25% - 10px);
+    /* Tres imágenes por fila con espacio incluido */
+    box-sizing: content-box;
+    border: 2px solid #020202;
+    overflow: hidden;
+    background: #e4e8a0;
+    
+}
+
+header,footer {
+    background: #A50044;
+    padding: 20px;
+    text-align: left;
+    flex: 1 100%;
+    
+    color: white;
+}
+
+div img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 1724px) {
+    div {
+        flex: 1 1 calc(33.3333% - 10px);
+        /* Tres imágenes por fila con espacio incluido */
+    }
+}
+
+@media (max-width: 1124px) {
+    div {
+        flex: 1 1 calc(50% - 10px);
+        /* Dos imágenes por fila con espacio incluido */
+    }
+}
+
+@media (max-width: 640px) {
+    div {
+        flex: 1 1 100%;
+        /* Una imagen por fila */
+    }
+}
